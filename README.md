@@ -24,7 +24,7 @@ from the paper [StyleCLIP: Text-Driven Manipulation of StyleGAN Imagery](https:/
 
 ```
 git clone https://github.com/A-ladzin/dls-mipt-image-generation-project.git
-cd dls-mipt-image-generation-project.git
+cd dls-mipt-image-generation-project
 ```
 
 2. Create and activate a new environment
@@ -42,9 +42,9 @@ pip install -r requirements.txt
 
     -   Download one of pretrained encoders:
     -   
-        |[FFHQ Inversion](https://drive.google.com/file/d/1EM87UquaoQmk17Q8d5kYIAHqu0dkYqdT/view?usp=sharing) | Pretrained FFHQ pSp encoder taken from [eladrich](https://github.com/eladrich/pixel2style2pixel).
-
         |[FFHQ Inversion](https://drive.google.com/file/d/1cUv_reLE6k3604or78EranS7XzuVMWeO/view?usp=sharing) | Pretrained FFHQ e4e encoder taken from [omertov](https://github.com/omertov/encoder4editing/).
+        
+        |[FFHQ Inversion](https://drive.google.com/file/d/1bMTNWkh5LArlaWSc_wa8VKyq2V42T2z0/view) | Pretrained FFHQ pSp encoder taken from [eladrich](https://github.com/eladrich/pixel2style2pixel).
 
     -   Download pretrained IR-SE50 model:
     
