@@ -1,0 +1,11 @@
+# -- Python 3.10.7 --
+--find-links https://download.pytorch.org/whl/torch_stable.html
+numpy==1.23.5
+torch==2.3.1+cu118
+torchvision==0.18.1+cu118
+matplotlib==3.9.0
+scipy==1.13.1
+argparse==1.1
+tqdm==4.66.4
+dlib==19.24.4
+git+https://github.com/openai/CLIP.git
