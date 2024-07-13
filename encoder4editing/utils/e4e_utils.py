@@ -15,8 +15,6 @@ def load_model(model_path,stylegan_size = 1024):
     ckpt = torch.load(model_path, map_location='cpu')
     opts = ckpt['opts']
     opts['stylegan_size'] = stylegan_size
-    # pprint.pprint(opts)  # Display full options used
-    # update the training options
     opts['checkpoint_path'] = model_path
     opts= Namespace(**opts)
     net = pSp(opts)
@@ -162,50 +160,5 @@ def create_personal_grid(image_path,mappers,optimizer,net,beta_step = 0.35, n_se
     plt.imshow(grid)
     
 
-    
 
-
-
-
-
-# def show_series(image_path,optimizer,net,beta_step = 0.35, n_series = 4):
-
-#     original_image = Image.open(image_path)
-#     original_image = original_image.convert("RGB")
-#     resize_dims = (256,256)
-
-#     input_image = run_alignment(image_path,verbose=0)
-
-#     input_image.resize(resize_dims)
-
-#     img_transforms = transforms.Compose([
-#         transforms.Resize((256, 256)),
-#         transforms.ToTensor(),
-#         transforms.Normalize([0.5, 0.5, 0.5], [0.5, 0.5, 0.5])])
-#     transformed_image = img_transforms(input_image)
-
-#     with torch.no_grad():
-#         images, latents = run_on_batch(transformed_image.unsqueeze(0), net)
-#         result_image, latent = images[0], latents[0]
-#     fig = plt.figure(figsize = (30,8))
-#     fig.set_facecolor("black")
-#     result_image = result_image-result_image.min()
-#     result_image = result_image/result_image.max()
-#     optimizer.eval()
-#     for i in range(n_series):
-#         if i == 0:
-#             plt.subplot(1,n_series+1,i+1)
-#             plt.title(f"real image",c="white")
-#             plt.xticks([])
-#             plt.yticks([])
-#             plt.imshow(input_image)
-            
-#         samp = optimizer(latents,beta=beta_step*i)[0].detach().cpu().squeeze().permute(1,2,0)
-#         samp = (samp+1)/2
-#         samp = torch.clip_(samp,0,1)
-#         plt.subplot(1,n_series+1,i+2)
-#         plt.title(f"β : {beta_step*i}",c="white")
-#         plt.xticks([])
-#         plt.yticks([])
-#         plt.imshow(samp)
 
