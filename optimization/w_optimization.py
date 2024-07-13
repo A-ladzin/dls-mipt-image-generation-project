@@ -212,7 +212,7 @@ class Optimizer(nn.Module):
             running_average_i.append(0)
             running_average_c.append(0)
         if make_video:
-            imageio.mimsave('results/movie.gif', frames)
+            imageio.mimsave('results/movie.gif', frames,loop=0)
 
 
 
