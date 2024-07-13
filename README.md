@@ -24,7 +24,7 @@ from the paper [StyleCLIP: Text-Driven Manipulation of StyleGAN Imagery](https:/
 
 ```
 git clone https://github.com/A-ladzin/dls-mipt-image-generation-project.git
-cd dls-mipt-image-generation-project.git
+cd dls-mipt-image-generation-project
 ```
 
 2. Create and activate a new environment
