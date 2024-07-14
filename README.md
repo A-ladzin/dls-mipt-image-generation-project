@@ -63,8 +63,7 @@ pip install -r requirements.txt
 
 6. You can get aquainted with the training process and see some examples with result evaluations in the `optimization_playground.ipynb` for the latent vector optimization or `mapper_playground.ipynb` notebook for the latent mapper optimization
 
-
-![alt text](results/movie.gif)
+![](results/movie.gif)
 
 
 ## Related Works
