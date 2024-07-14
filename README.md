@@ -72,4 +72,10 @@ pip install -r requirements.txt
 
 [StyleCLIP](https://arxiv.org/abs/2103.17249) (Patashnik et al.)
 
+[StyleGan2](http://arxiv.org/abs/1912.04958) (Karras et al.)
+
+[ArcFace](https://arxiv.org/abs/1801.07698) (Deng et al.)
+
+[CLIP](https://arxiv.org/abs/2103.00020) (Radford et al.)
+
     
