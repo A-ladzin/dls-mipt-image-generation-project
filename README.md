@@ -70,4 +70,6 @@ pip install -r requirements.txt
 
 [e4e](https://arxiv.org/abs/2102.02766) (Tov et al.).
 
+[StyleCLIP](https://arxiv.org/abs/2103.17249) (Patashnik et al.)
+
     
