@@ -1,6 +1,6 @@
 
 ## Text-Based StyleGAN Latent Space Optimization for Editing Face Images
-###### MIPT Deep Learning School Project
+###### [MIPT Deep Learning School Project](https://dls.samcs.ru/)
 
 
 
