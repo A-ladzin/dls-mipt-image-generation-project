@@ -1,7 +1,6 @@
 
 ## Text-Based StyleGAN Latent Space Optimization for Editing Face Images
 
-![](results/outpup.png)
 ###### [MIPT Deep Learning School Project](https://dls.samcs.ru/)
 
 
@@ -65,7 +64,6 @@ pip install -r requirements.txt
 
 6. You can get aquainted with the training process and see some examples with result evaluations in the `optimization_playground.ipynb` for the latent vector optimization or `mapper_playground.ipynb` notebook for the latent mapper optimization
 
-![](results/movie.gif)
 
 
 ## Related Works
